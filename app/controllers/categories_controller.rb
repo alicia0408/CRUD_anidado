@@ -10,11 +10,13 @@ class CategoriesController < ApplicationController
   # GET /categories/1
   # GET /categories/1.json
   def show
+  @categories = # el find para buscar el id
   end
 
   # GET /categories/new
   def new
     @category = Category.new
+    @product = Product.new
   end
 
   # GET /categories/1/edit
